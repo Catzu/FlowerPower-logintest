@@ -3,12 +3,23 @@ include_once 'header.php';
 echo "header";
 ?>
         <section class="index-intro">
-            <h1>This is an intro?</h1>
-            <p>this should be an important paragraph that explains stuff</p>
+            <?php
+                if (isset($_SESSION["userid"])) {
+                    echo "<p>Hello there " . $_SESSION["userid"] . "</p>";
+                }
+                if (isset($_SESSION["userid"])) {
+                    echo "<p>Hello there ". $_SESSION["useruid"]."</p>";
+                }
+                if (isset($_SESSION["useruid"])) {
+                    echo "<p>Hello there ". $_SESSION["useruid"]."</p>";
+                }
+            ?>
+            <h1>Hello world</h1>
+            <p>This is my trying to make a functional webshop</p>
         </section>
 
         <section class="index-categories">
-            <h2>Basic categories</h2>
+            <h2>Categories</h2>
             <div class="index-categories-list">
                 <div>
                     <h3>nmr 1</h3>

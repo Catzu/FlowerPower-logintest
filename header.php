@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +24,17 @@
                 <li><a href="#">Informatie</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Winkelwagen</a></li>
-                <li><a href="login.php">Inloggen</a></li>
-                <li><a href="signup.php">registreren</a></li>
-                <li><a href="https://www.youtube.com/watch?v=ZRtdQ81jPUQ" target="_blank">pain</a></li>
+                <?php
+                    if (isset($_SESSION["userid"])) {
+                        echo '<li><a href="profile.php">Profiel pagina</a></li>';
+                        echo '<li><a href="includes/logout.inc.php">Uitloggen</a></li>';
+                        echo '<li><a href="https://www.youtube.com/watch?v=ZRtdQ81jPUQ" target="_blank">pain</a></li>';
+                    }
+                    else {
+                        echo '<li><a href="login.php">Inloggen</a></li>';
+                        echo '<li><a href="signup.php">registreren</a></li>';
+                    }
+                ?>
             </ul>
         </div>
     </nav>
