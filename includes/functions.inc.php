@@ -70,8 +70,8 @@ function uidExists($conn, $username, $email) {
     mysqli_stmt_close($stmt);
 }
 
-function createUser($conn, $name, $email, $username, $pwd) {
-    $sql = "INSERT INTO users (usersName, UsersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
+function createUser($conn, $name, $email, $username, $pwd, $telefoonnummer, $adress, $huisnummer, $postcode, $plaats) {
+    $sql = "INSERT INTO users (usersName, UsersEmail, usersUid, usersPwd, usersTelefoonnummer, usersAdress, usersHuisnummer, usersPostcode, usersPlaats) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfailed");
@@ -80,7 +80,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
     
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "sssssssss", $name, $email, $username, $telefoonnummer, $adress, $huisnummer, $postcode, $plaats, $hashedPwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../signup.php?error=none");
