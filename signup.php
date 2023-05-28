@@ -7,11 +7,16 @@ echo "header";
         <h2>Registreren</h2>
         <div>
             <form action="includes/signup.inc.php" method="post">
-                <input type="text" name="name" placeholder="full name">
+                <input type="text" name="name" placeholder="Volledige naam">
                 <input type="text" name="email" placeholder="email">
                 <input type="text" name="uid" placeholder="username">
-                <input type="password" name="pwd" placeholder="password">
-                <input type="password" name="pwdrepeat" placeholder="repeat password">
+                <input type="password" name="pwd" placeholder="passwoord">
+                <input type="password" name="pwdrepeat" placeholder="repeat passwoord">
+                <input type="text" name="telefoonnummer" placeholder="telefoonnummer">
+                <input type="text" name="adres" placeholder="adres">
+                <input type="text" name="huisnummer" placeholder="huisnummer">
+                <input type="text" name="postcode" placeholder="postcode">
+                <input type="text" name="plaats" placeholder="plaats">
                 <button type="submit" name="submit">Registreren</button>
             </form>
         </div>

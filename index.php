@@ -14,7 +14,7 @@ include_once 'header.php';
                 }
             ?>
             <h1>Hello world</h1>
-            <p>This is my trying to make a functional webshop</p>
+            <p>This is my trying to make a functional webshop</p> 
         </section>
         
         <section>

@@ -2,9 +2,9 @@
 
 #login end
 
-function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
+function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat, $telefoonnummer, $adress, $huisnummer, $postcode, $plaats) {
     #$result;
-    if (empty($name)||empty($email)||empty($username)||empty($pwd)||empty($pwdRepeat)) {
+    if (empty($name)||empty($email)||empty($username)||empty($pwd)||empty($pwdRepeat)||empty($telefoonnummer)||empty($adress)||empty($huisnummer)||empty($postcode)||empty($plaats)) {
         $result = true;
     }
     else {
