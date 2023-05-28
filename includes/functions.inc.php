@@ -1,7 +1,9 @@
 <?php
 
+#login end
+
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
-    //$result;
+    #$result;
     if (empty($name)||empty($email)||empty($username)||empty($pwd)||empty($pwdRepeat)) {
         $result = true;
     }
@@ -119,3 +121,5 @@ function loginUser($conn, $username, $pwd) {
         exit();
     }
 }
+
+#login end

@@ -3,9 +3,9 @@ include_once 'header.php';
 echo "header";
 ?>
 
-    <section class="signup-form">
+    <section>
         <h2>Registreren</h2>
-        <div class="signup-form-form">
+        <div>
             <form action="includes/signup.inc.php" method="post">
                 <input type="text" name="name" placeholder="full name">
                 <input type="text" name="email" placeholder="email">

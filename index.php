@@ -2,7 +2,7 @@
 include_once 'header.php';
 echo "header";
 ?>
-        <section class="index-intro">
+        <section>
             <?php
                 if (isset($_SESSION["userid"])) {
                     echo "<p>Hello there " . $_SESSION["userid"] . "</p>";
@@ -18,9 +18,9 @@ echo "header";
             <p>This is my trying to make a functional webshop</p>
         </section>
 
-        <section class="index-categories">
+        <section>
             <h2>Categories</h2>
-            <div class="index-categories-list">
+            <div>
                 <div>
                     <h3>nmr 1</h3>
                 </div>
