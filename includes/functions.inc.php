@@ -1,7 +1,6 @@
 <?php
 
-#login end
-
+#login start
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat, $telefoonnummer, $adress, $huisnummer, $postcode, $plaats) {
     #$result;
     if (empty($name)||empty($email)||empty($username)||empty($pwd)||empty($pwdRepeat)||empty($telefoonnummer)||empty($adress)||empty($huisnummer)||empty($postcode)||empty($plaats)) {
@@ -123,7 +122,6 @@ function loginUser($conn, $username, $pwd) {
         exit();
     }
 }
-
 #login end
 
 #card start
@@ -153,7 +151,6 @@ function loginUser($conn, $username, $pwd) {
                                 Some quick example text to build on the card.
                             </p>
                             <h5>
-                                <small><s class=\"text-secondary\">$productpricediscount</s></small>
                                 <span class=\"price\">$productprice</span>
                             </h5>
 

@@ -19,8 +19,8 @@
             <a href="index.php"><img src="img/Icon 3.png" alt="Flower Power logo"></a>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="winkel.php">Winkel</a></li>
-                <li><a href="#">Webwinkel</a></li>
+                <li><a href="#">Winkel</a></li>
+                <li><a href="winkel.php">Webwinkel</a></li>
                 <li><a href="#">Informatie</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Winkelwagen</a></li>
